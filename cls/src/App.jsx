@@ -1,97 +1,94 @@
-
 import './App.css'
-import Counter from './functional-components/hooks/useState/Counter'
+import Home from './functional-components/hooks/useContext/theme/Home'
+import { ThemeProvider } from './functional-components/hooks/useContext/theme/ThemeContext'
+// import UserList from './functional-components/hooks/useEffect/UserList'
+// import UseEff from './functional-components/hooks/useEffect/UseEff'
+// import ProfileForm from './functional-components/hooks/useState/ProfileForm'
+// import BooleanState from './functional-components/hooks/useState/BooleanState'
+// import TextInput from './functional-components/hooks/useState/TextInput'
+// import Counter from './functional-components/hooks/useState/Counter'
 // import Props from './functional-components/Props'
 // import State from './functional-components/State'
 // import Basic from './functional-components/Basic'
 // import Conditional from './embedding-expression/Conditional'
 // import CallingFunction from './embedding-expression/CallingFunction'
 // import Welcome from './embedding-expression/Welcome'
-// import Basic from './Basic'
 
 function App() {
 
   return (
     <>
-
-    {/* ----embedding-expression---- */}
+      {/* -------embedding-expression-------}
     {/* <Basic/> */}
-    {/* <Welcome/> */}
-    {/*  <CallingFunction/>*/}
-    {/* {/* <Conditional/> */}
+      {/* <Welcome/> */}
+      {/* <Conditional/>*/}
 
-    {/* ---functional-components--- */}
-    {/* <Basic/> */}
-    {/* <State/> */}
-    {/* <Props/> */}
 
-    {/* ---hooks--- */}
-    <Counter/>
+      {/* functional-components */}
+      {/* <Basic/> */}
+      {/* <State/> */}
+      {/* <Props/> */}
+
+      {/* -------hooks--------- use-state*/}
+      {/* <Counter/> */}
+      {/* <TextInput/> */}
+      {/* <BooleanState/> */}
+      {/* <ProfileForm/> */}
+
+      {/*----- use-effect----- */}
+      {/* <UseEff/> */}
+      {/* <UserList /> */}
+
+      {/* ----use-context----- */}
+      {/*--- 1.Theme---- */}
+      <ThemeProvider>
+        <Home/>
+      </ThemeProvider>
+
+
     </>
   )
 }
 
-export default App 
+export default App
 
 
-// ----class-components----
-// import React, { Component } from 'react'
-// import BasicClass from './Class-Components/BasicClass'
+// internal area  -  state
+// probs   -  passing data
 
-// export default class App extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <BasicClass/>
-//       </div>
-//     )
-//   }
-// }
+
 
 // import React, { Component } from 'react'
-// import Counter from './Class-Components/counter'
-// export default class App extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <Counter/>
-//       </div>
-//     )
-//   }
-// }
-
-{/* -----life cycle methods------ */}
-// import React, { Component } from 'react'
-// import Mounting from './Class-Components/life-cycle-methods/Mounting'
-// import Update from './Class-Components/life-cycle-methods/Update'
 // import UpdateShould from './Class-Components/life-cycle-methods/UpdateShould'
+// // import List from './embedding-expression/List'
+// // import UnMounting from './class-components/life-cycle-methods/Unmounting'
+// // import Counter from './class-components/Counter'
+// // import Mounting from './class-components/life-cycle-methods/Mounting'
+// // import Update from './class-components/life-cycle-methods/Update'
+// // import BasicClass from './class-components/BasicClass'
 
 // export default class App extends Component {
 //   render() {
 //     return (
 //       <div>
-//         {/* <Mounting/> */}
-//         {/* <Update/> */}
-//         {/* <UpdateShould/> */}
+{/* <BasicClass/> */ }
+{/* <Counter/> */ }
+
+{/* --------life cycle methods--------- */ }
+{/* this is when the component is being created and inserted into the DOM */ }
+
+{/* <Mounting/> */ }
+{/* <Update/> */ }
+{/* <UpdateShould/> */ }
+{/* <List/> */ }
+{/* <UnMounting/> */ }
+
 //       </div>
 //     )
 //   }
 // }
 
-// import React from 'react'
-// import UnMounting from './Class-Components/life-cycle-methods/UnMounting'
-// // import List from './embedding-expression/List'
 
-// const App = () => {
-//   return (
-//     <div>
-//       {/* <List/> */}
-//       <UnMounting/>
-//     </div>
-//   )
-// }
-
-// export default App
 
 
 
