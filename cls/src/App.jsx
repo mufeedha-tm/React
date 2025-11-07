@@ -1,6 +1,8 @@
 import './App.css'
-import Home from './functional-components/hooks/useContext/theme/Home'
-import { ThemeProvider } from './functional-components/hooks/useContext/theme/ThemeContext'
+// import { UserApiProvider } from './functional-components/hooks/useContext/user-list/UserApiContext'
+// import UserList from './functional-components/hooks/useContext/user-list/UserList'
+// import Home from './functional-components/hooks/useContext/theme/Home'
+// import { ThemeProvider } from './functional-components/hooks/useContext/theme/ThemeContext'
 // import UserList from './functional-components/hooks/useEffect/UserList'
 // import UseEff from './functional-components/hooks/useEffect/UseEff'
 // import ProfileForm from './functional-components/hooks/useState/ProfileForm'
@@ -41,9 +43,16 @@ function App() {
 
       {/* ----use-context----- */}
       {/*--- 1.Theme---- */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <Home/>
-      </ThemeProvider>
+      </ThemeProvider> */}
+
+      {/* ---2.user list---- */}
+      {/* <UserApiProvider>
+        <UserList/>
+      </UserApiProvider> */}
+
+      {/* ----react-router-dom--- */}
 
 
     </>
