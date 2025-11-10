@@ -1,4 +1,9 @@
+import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Products from './dynamic-routing/Products'
+import ProductDetail from './dynamic-routing/ProductDetail'
+// import Home from './react-router-dom/Home'
+// import About from './react-router-dom/About'
 // import { UserApiProvider } from './functional-components/hooks/useContext/user-list/UserApiContext'
 // import UserList from './functional-components/hooks/useContext/user-list/UserList'
 // import Home from './functional-components/hooks/useContext/theme/Home'
@@ -53,6 +58,29 @@ function App() {
       </UserApiProvider> */}
 
       {/* ----react-router-dom--- */}
+      {/* ----1.Basic -----*/}
+      {/* <div>
+        <nav>
+         <Link to='/'>Home</Link>|
+         <Link to='/about'>About</Link>
+        </nav>
+
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+
+        </Routes>
+
+      </div> */}
+
+      {/* ---2.Dynamic-routing---*/}
+      <Routes>
+        <Route path='/' element={<Products/>}/>
+        <Route path='/products/:id' element={<ProductDetail/>}/>
+      </Routes>
+
+
+
 
 
     </>
