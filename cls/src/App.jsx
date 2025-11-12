@@ -1,7 +1,13 @@
 import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Products from './dynamic-routing/Products'
-import ProductDetail from './dynamic-routing/ProductDetail'
+import Home from './nested-routing/pages/Home'
+import Navbar from './nested-routing/Navbar'
+import About from './nested-routing/pages/About'
+import Services from './nested-routing/pages/Services'
+import WebDev from './nested-routing/pages/services/WebDev'
+import AppDev from './nested-routing/pages/services/AppDev'
+// import Products from './dynamic-routing/Products'
+// import ProductDetail from './dynamic-routing/ProductDetail'
 // import Home from './react-router-dom/Home'
 // import About from './react-router-dom/About'
 // import { UserApiProvider } from './functional-components/hooks/useContext/user-list/UserApiContext'
@@ -74,10 +80,23 @@ function App() {
       </div> */}
 
       {/* ---2.Dynamic-routing---*/}
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Products/>}/>
         <Route path='/products/:id' element={<ProductDetail/>}/>
-      </Routes>
+      </Routes> */}
+
+      {/* 3.Nested routing */}
+        <Navbar/>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+
+          {/* nested route */}
+         <Route path='/services' element={<Services/>}>
+         <Route path='web-dev' element={<WebDev />} />
+         <Route path='app-dev' element={<AppDev />} />
+         </Route>
+        </Routes>
 
 
 
