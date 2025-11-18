@@ -1,6 +1,7 @@
 import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
-import SimpleForm from './form/SimpleForm'
+import Form from './form/Form'
+// import SimpleForm from './form/SimpleForm'
 // import AllProducts from './react-keys/AllProducts'
 // import Items from './react-keys/items'
 // import Home from './nested-routing/pages/Home'
@@ -108,7 +109,8 @@ function App() {
         {/* <AllProducts /> */}
 
         {/*-----form validation----- */}
-        <SimpleForm />
+        {/* <SimpleForm /> */}
+        <Form/>
 
 
 
