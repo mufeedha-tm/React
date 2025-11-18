@@ -1,8 +1,9 @@
 import React from 'react'
+import './welcome.css'
 
 const Welcome = () => {
 
-    let name = 'NIDHA';
+    let name = 'Mufeedha';
 
   return (
     <div>

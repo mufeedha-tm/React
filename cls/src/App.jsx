@@ -1,11 +1,14 @@
 import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Home from './nested-routing/pages/Home'
-import Navbar from './nested-routing/Navbar'
-import About from './nested-routing/pages/About'
-import Services from './nested-routing/pages/Services'
-import WebDev from './nested-routing/pages/services/WebDev'
-import AppDev from './nested-routing/pages/services/AppDev'
+import SimpleForm from './form/SimpleForm'
+// import AllProducts from './react-keys/AllProducts'
+// import Items from './react-keys/items'
+// import Home from './nested-routing/pages/Home'
+// import Navbar from './nested-routing/Navbar'
+// import About from './nested-routing/pages/About'
+// import Services from './nested-routing/pages/Services'
+// import WebDev from './nested-routing/pages/services/WebDev'
+// import AppDev from './nested-routing/pages/services/AppDev'
 // import Products from './dynamic-routing/Products'
 // import ProductDetail from './dynamic-routing/ProductDetail'
 // import Home from './react-router-dom/Home'
@@ -26,6 +29,7 @@ import AppDev from './nested-routing/pages/services/AppDev'
 // import Conditional from './embedding-expression/Conditional'
 // import CallingFunction from './embedding-expression/CallingFunction'
 // import Welcome from './embedding-expression/Welcome'
+// import Person from './embedding-expression/person'
 
 function App() {
 
@@ -35,6 +39,7 @@ function App() {
     {/* <Basic/> */}
       {/* <Welcome/> */}
       {/* <Conditional/>*/}
+      {/* <Person /> */}
 
 
       {/* functional-components */}
@@ -86,17 +91,25 @@ function App() {
       </Routes> */}
 
       {/* 3.Nested routing */}
-        <Navbar/>
+        {/* <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<About/>}/>
+          <Route path='/about' element={<About/>}/> */}
 
-          {/* nested route */}
-         <Route path='/services' element={<Services/>}>
+          {/* -----nested route--- */}
+         {/* <Route path='/services' element={<Services/>}>
          <Route path='web-dev' element={<WebDev />} />
          <Route path='app-dev' element={<AppDev />} />
          </Route>
-        </Routes>
+        </Routes> */}
+
+        {/*--- React-keys--- */}
+        {/* <Items /> */}
+        {/* <AllProducts /> */}
+
+        {/*-----form validation----- */}
+        <SimpleForm />
+
 
 
 
