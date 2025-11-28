@@ -1,0 +1,152 @@
+/* Reset + font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.app-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: whitesmoke;
+  background-size: 200% 200%;
+  animation: bgMove 10s ease infinite;
+
+  padding: 20px;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card */
+.card {
+  width: 360px;
+  background: #dad4f5; 
+  padding: 35px 28px;
+  border-radius: 22px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Titles */
+.title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #2f2f42; 
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 13px 15px;
+  margin-bottom: 14px;
+
+  border-radius: 12px;
+  border: 1.5px solid #8b81b8;
+  background: #c4b8eb; 
+
+  font-size: 15px;
+  transition: 0.25s ease;
+}
+
+.input:focus {
+  border-color: #6f5acb;
+  box-shadow: 0 0 8px rgba(111, 90, 203, 0.35);
+  background: #d1c0f2;
+  outline: none;
+}
+
+/* Buttons  */
+.btn {
+  width: 100%;
+  padding: 13px;
+  margin-top: 6px;
+
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.18);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+/* Button color variants */
+.signup-btn {
+  background: linear-gradient(135deg, #6f5acb, #9477e0);
+}
+
+.login-btn {
+  background: linear-gradient(135deg, #16a085, #3ebaaa); 
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #d9534f, #ef6c6c); 
+}
+
+/* Switch links */
+.switch-text {
+  margin-top: 16px;
+  text-align: center;
+  color: #3a3a55;
+  font-size: 14px;
+}
+
+.switch-link {
+  color: #6f5acb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.switch-link:hover {
+  text-decoration: underline;
+}
+
+/* Message  */
+.message {
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+
+  background: #dbe3f2;
+  color: #1f2d50;
+}
+
+.message.error {
+  background: #f7d3d3;
+  color: #8b0000;
+}
+
+/* Responsive */
+@media (max-width: 420px) {
+  .card {
+    width: 100%;
+    padding: 30px;
+  }
+}

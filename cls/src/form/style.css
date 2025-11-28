@@ -1,0 +1,99 @@
+/* Layout Background */
+.form-wrapper {
+  background: #003d73;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-wrapper h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* Form Box */
+.job-form {
+  background: white;
+  width: 380px;
+  padding: 25px;
+  border-radius: 4px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group {
+  width: 100%;
+}
+
+/* Inputs */
+.job-form input,
+.job-form select,
+.job-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-bottom: 6px;
+}
+
+textarea {
+  height: 80px;
+  resize: none;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin: 0;
+  font-size: 13px;
+}
+
+/* File input row */
+.file-row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Buttons */
+.btn-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.reset-btn {
+  padding: 8px 16px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.send-btn {
+  padding: 8px 18px;
+  background: orange;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 450px) {
+  .job-form {
+    width: 90%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}

@@ -1,6 +1,14 @@
 import { Link, Route, Routes } from 'react-router-dom'
-import './App.css'
-import Form from './form/Form'
+import AxiosDelete from './axios/AxiosDelete'
+// import AxiosPut from './axios/AxiosPut'
+// import TodoApp from './local-storage/TodoApp'
+// import AxiosPost from './axios/AxiosPost'
+// import Login from './session-storage/Login'
+// import AxiosGet from './axios/AxiosGet'
+// import FormWork from './form/FormWork'
+// import './App.css'
+// import Crud from './local-storage/Crud'
+// import Form from './form/Form'
 // import SimpleForm from './form/SimpleForm'
 // import AllProducts from './react-keys/AllProducts'
 // import Items from './react-keys/items'
@@ -92,26 +100,44 @@ function App() {
       </Routes> */}
 
       {/* 3.Nested routing */}
-        {/* <Navbar/>
+      {/* <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<About/>}/> */}
 
-          {/* -----nested route--- */}
-         {/* <Route path='/services' element={<Services/>}>
+      {/* -----nested route--- */}
+      {/* <Route path='/services' element={<Services/>}>
          <Route path='web-dev' element={<WebDev />} />
          <Route path='app-dev' element={<AppDev />} />
          </Route>
         </Routes> */}
 
-        {/*--- React-keys--- */}
-        {/* <Items /> */}
-        {/* <AllProducts /> */}
+      {/*--- React-keys--- */}
+      {/* <Items /> */}
+      {/* <AllProducts /> */}
 
-        {/*-----form validation----- */}
-        {/* <SimpleForm /> */}
-        <Form/>
+      {/*-----form validation----- */}
+      {/* <SimpleForm /> */}
+      {/* <Form/> */}
+      {/* <FormWork /> */}
 
+      {/* -----local-storage------ */}
+      {/* <Crud /> */}
+      {/* <TodoApp /> */}
+
+
+      {/* -----axios------ */}
+      {/* <AxiosGet /> */}
+      {/* <AxiosPost /> */}
+       {/* <AxiosPut /> */}
+       <AxiosDelete />
+
+
+      {/* ------session-storage */}
+      {/* <Login /> */}
+      
+      
+        
 
 
 
