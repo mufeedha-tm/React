@@ -1,0 +1,48 @@
+.layout-root {
+  display: flex;
+  min-height: 100vh;
+  background: #071024;
+}
+
+/* content area moves/shrinks based on sidebar presence */
+.layout-content {
+  flex: 1;
+  padding: 24px;
+  transition: margin-left 0.35s cubic-bezier(0.4,0,0.2,1);
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: auto;
+  background: linear-gradient(180deg,#071024,#051021);
+}
+
+/* when sidebar open, content gets left margin for small spacing */
+.layout-content.sidebar-open { margin-left: 0; }
+.layout-content.sidebar-closed { margin-left: 0; }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.hamburger {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: #dff3ff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hamburger:hover { background: rgba(255,255,255,0.02); }
+.top-actions { display:flex; gap:12px; align-items:center; }
+.user-name { color: #cfe9ff; font-weight:700; }
+.btn-ghost {
+  background: linear-gradient(90deg,#2b3b5d,#173852);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor:pointer;
+}
+.main-area { max-width: 1100px; margin: 0 auto; }

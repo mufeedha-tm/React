@@ -1,0 +1,59 @@
+/* Sidebar base */
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg,#0b1623,#081126);
+  color: #cfe9ff;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  box-shadow: 4px 0 18px rgba(0,0,0,0.5);
+  z-index: 50;
+}
+.sidebar.closed { transform: translateX(-110%); }
+.sidebar.open { transform: translateX(0); }
+
+.sidebar-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }
+.brand { display:flex; align-items:center; gap:10px; }
+.brand-logo { width:36px; height:36px; border-radius:8px; background:linear-gradient(90deg,#4b6bd6,#8b5cf6); display:flex; align-items:center; justify-content:center; font-weight:700; color:#fff; }
+.brand-title { font-weight:700; color:#e9f7ff; font-size:14px; }
+
+.close-btn { background:none; border:none; color:#cfe9ff; font-size:22px; cursor:pointer; }
+
+/* nav */
+.nav { display:flex; flex-direction:column; gap:8px; margin-top:8px; }
+.nav-item { padding:10px 12px; border-radius:8px; color:#cbe8ff; text-decoration:none; font-weight:600; }
+.nav-item:hover { background: rgba(255,255,255,0.03); color:#fff; }
+.nav-item.active { background: rgba(139,92,246,0.18); color:#fff; }
+
+/* Stats grid and cards */
+.stats-row { display:flex; gap:16px; margin-bottom:18px; align-items:stretch; }
+.stats-card {
+  flex:1; background: linear-gradient(180deg,#0c1622,#071022); border-radius:12px; padding:14px;
+  box-shadow: 0 8px 28px rgba(3,9,18,0.6);
+  color:#dff3ff;
+}
+.stats-title { font-size:13px; color:#9fbad6; margin-bottom:6px; }
+.stats-value { font-size:24px; font-weight:800; margin-bottom:6px; }
+.stats-meta { font-size:12px; color:#9fb1c8; }
+
+/* Charts grid */
+.charts-grid {
+  display:grid; grid-template-columns: 1fr 1fr; gap:18px; margin-top:12px;
+}
+.chart-card {
+  background: linear-gradient(180deg,#0c1622,#071022);
+  border-radius:12px; padding:12px; box-shadow: 0 6px 22px rgba(0,0,0,0.5);
+}
+
+/* recent activity box */
+.activity-list { padding:12px; }
+
+/* responsive */
+@media (max-width: 900px) {
+  .sidebar { position: fixed; z-index: 60; }
+  .charts-grid { grid-template-columns: 1fr; }
+  .stats-row { flex-direction: column; }
+}

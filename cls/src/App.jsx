@@ -1,5 +1,6 @@
 import { Link, Route, Routes } from 'react-router-dom'
-import AxiosDelete from './axios/AxiosDelete'
+// import BasicHookForm from './form/react-hook-form/BasicHookForm'
+// import AxiosDelete from './axios/AxiosDelete'
 // import AxiosPut from './axios/AxiosPut'
 // import TodoApp from './local-storage/TodoApp'
 // import AxiosPost from './axios/AxiosPost'
@@ -120,6 +121,7 @@ function App() {
       {/* <SimpleForm /> */}
       {/* <Form/> */}
       {/* <FormWork /> */}
+      {/* <BasicHookForm /> */}
 
       {/* -----local-storage------ */}
       {/* <Crud /> */}
@@ -130,19 +132,13 @@ function App() {
       {/* <AxiosGet /> */}
       {/* <AxiosPost /> */}
        {/* <AxiosPut /> */}
-       <AxiosDelete />
+       {/* <AxiosDelete /> */}
 
 
       {/* ------session-storage */}
       {/* <Login /> */}
-      
-      
+
         
-
-
-
-
-
     </>
   )
 }
